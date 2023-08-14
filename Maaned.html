@@ -49,8 +49,8 @@
 const today = new Date();
 
 let month = today.getMonth() + 1;
-quotes=[ month
-];
+    let thisMonth = today.toLocaleString("default", (month: "long"));
+quotes=[ thisMonth ];
 
 const INTERVAL = 86400000;
 
