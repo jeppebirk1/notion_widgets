@@ -4,14 +4,18 @@
   <title>Current Month Widget</title>
   <style>
     .month-widget {
+      width: 150px; /* Set a fixed width to create a square shape */
+      height: 150px; /* Set the same height as the width */
       font-size: 24px;
       font-weight: bold;
       text-align: center;
       padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #1a237e; /* Dark blue background color */
-      color: #ffffff; /* White text color */
+      border-radius: 50%; /* Make the edges curved to create a circular appearance */
+      background-color: #1a237e;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
@@ -36,7 +40,7 @@
 
     // Display the current month in the widget
     var currentMonthWidget = document.getElementById("currentMonth");
-    currentMonthWidget.textContent = "Current Month: " + currentMonthName;
+    currentMonthWidget.textContent = currentMonthName;
   </script>
 </body>
 </html>
