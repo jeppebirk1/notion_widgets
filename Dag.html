@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Current Day Widget</title>
+  <style>
+    .widget {
+      width: 150px;
+      height: 150px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #1a237e;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="widget" id="currentDay"></div>
+
+  <script>
+    // Get the current date
+    var currentDate = new Date();
+
+    // Display the current day in the widget
+    var currentDayWidget = document.getElementById("currentDay");
+    currentDayWidget.textContent = "Day: " + currentDate.getDate();
+  </script>
+</body>
+</html>
