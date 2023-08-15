@@ -27,9 +27,20 @@
     // Get the current date
     var currentDate = new Date();
 
+    // Array of day names in Danish
+    var dayNames = [
+      "Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"
+    ];
+
+    // Get the current day index (0-6) from the date
+    var currentDayIndex = currentDate.getDay();
+
+    // Get the current day name from the array
+    var currentDayName = dayNames[currentDayIndex];
+
     // Display the current day in the widget
     var currentDayWidget = document.getElementById("currentDay");
-    currentDayWidget.textContent = "Day: " + currentDate.getDate();
+    currentDayWidget.textContent = "Dag: " + currentDayName;
   </script>
 </body>
 </html>
