@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Current Year Widget</title>
+  <style>
+    .widget {
+      width: 150px;
+      height: 150px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #1a237e;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="widget" id="currentYear"></div>
+
+  <script>
+    // Get the current date
+    var currentDate = new Date();
+
+    // Display the current year in the widget
+    var currentYearWidget = document.getElementById("currentYear");
+    currentYearWidget.textContent = "Year: " + currentDate.getFullYear();
+  </script>
+</body>
+</html>
